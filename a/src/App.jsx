@@ -82,7 +82,8 @@ function Contact() {
         <p>Feel free to reach out for collaboration or just a friendly hello!</p>
         <ul>
           <li>Email: <a href="mailto:asdadarya2222@gmail.com">asdadarya2222@gmail.com</a></li>
-          <li>LinkedIn: <a href="www.linkedin.com/in/saket-dadarya" target="_blank" rel="noopener noreferrer">saket-dadarya</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/saket-dadarya
+                          " target="_blank" rel="noopener noreferrer">saket-dadarya</a></li>
           <li>GitHub: <a href="https://github.com/saket940" target="_blank" rel="noopener noreferrer">https://github.com/saket940</a></li>
         </ul>
       </section>
