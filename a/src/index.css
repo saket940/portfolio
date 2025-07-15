@@ -1,0 +1,202 @@
+@import "tailwindcss";
+.portfolio-container {
+    margin: 0 auto;
+    padding: 24px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #f9f9f9 60%, #e0e7ff 100%);
+    min-height: 100vh;
+}
+
+.section {
+    margin-bottom: 48px;
+    padding: 32px 24px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(60, 60, 120, 0.12), 0 1.5px 4px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s, transform 0.3s;
+    position: relative;
+}
+
+.section:hover {
+    box-shadow: 0 16px 48px rgba(60, 60, 120, 0.18), 0 3px 12px rgba(0, 0, 0, 0.10);
+    transform: translateY(-6px) scale(1.02);
+    z-index: 2;
+}
+
+.home-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #2d3748;
+    text-shadow: 1px 2px 8px rgba(60, 60, 120, 0.08);
+}
+
+.home-section p {
+    font-size: 1.2rem;
+    color: #4a5568;
+}
+
+.about-section ul {
+    list-style: disc inside;
+    margin-top: 1rem;
+    color: #2d3748;
+}
+
+.project-list {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.project-item {
+    max-width: 300px;
+    flex: 1 1 250px;
+    background: linear-gradient(120deg, #f1f5f9 80%, #dbeafe 100%);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.10), 0 1px 4px rgba(0, 0, 0, 0.04);
+    transition: box-shadow 0.3s, transform 0.3s;
+    position: relative;
+}
+
+.project-item:hover {
+    box-shadow: 0 12px 32px rgba(37, 99, 235, 0.18), 0 3px 12px rgba(0, 0, 0, 0.10);
+    transform: translateY(-8px) scale(1.04) rotateZ(-1deg);
+    z-index: 2;
+}
+
+.projects-section h3 {
+    margin-top: 0;
+    color: #2563eb;
+    text-shadow: 1px 2px 8px rgba(37, 99, 235, 0.10);
+}
+
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-section li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-section a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+.contact-section a:hover {
+    color: #1e40af;
+    text-shadow: 0 2px 8px #dbeafe;
+    text-decoration: underline;
+}
+
+
+/* 3D Button Style Example */
+
+button,
+.project-item a {
+    display: inline-block;
+    background: linear-gradient(90deg, #2563eb 60%, #60a5fa 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.12);
+    cursor: pointer;
+    transition: box-shadow 0.2s, transform 0.2s;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+button:hover,
+.project-item a:hover {
+    box-shadow: 0 8px 32px rgba(37, 99, 235, 0.18);
+    transform: translateY(-2px) scale(1.05);
+    background: linear-gradient(90deg, #1e40af 60%, #60a5fa 100%);
+}
+
+@media (max-width: 600px) {
+    .portfolio-container {
+        padding: 8px;
+    }
+    .section {
+        padding: 16px 8px;
+    }
+    .project-list {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+
+/* Custom dark mode overrides */
+
+.dark .portfolio-container {
+    background: linear-gradient(135deg, #18181b 60%, #312e81 100%);
+    color: #f3f4f6;
+}
+
+.dark .section,
+.dark nav {
+    background: #232946;
+    color: #f3f4f6;
+    box-shadow: 0 8px 32px rgba(30, 41, 59, 0.18), 0 1.5px 4px rgba(0, 0, 0, 0.12);
+}
+
+.dark .section:hover {
+    box-shadow: 0 16px 48px rgba(30, 41, 59, 0.28), 0 3px 12px rgba(0, 0, 0, 0.18);
+}
+
+.dark .home-section h1,
+.dark .about-section ul,
+.dark .projects-section h3 {
+    color: #a5b4fc;
+    text-shadow: 1px 2px 8px rgba(129, 140, 248, 0.18);
+}
+
+.dark .home-section p,
+.dark .about-section ul {
+    color: #cbd5e1;
+}
+
+.dark .project-item {
+    background: linear-gradient(120deg, #232946 80%, #3730a3 100%);
+    box-shadow: 0 4px 16px rgba(129, 140, 248, 0.10), 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.dark .project-item:hover {
+    box-shadow: 0 12px 32px rgba(129, 140, 248, 0.18), 0 3px 12px rgba(0, 0, 0, 0.18);
+}
+
+.dark .contact-section a {
+    color: #a5b4fc;
+}
+
+.dark .contact-section a:hover {
+    color: #818cf8;
+    text-shadow: 0 2px 8px #3730a3;
+}
+
+.dark button,
+.dark .project-item a {
+    background: linear-gradient(90deg, #3730a3 60%, #818cf8 100%);
+    color: #fff;
+}
+
+.dark button:hover,
+.dark .project-item a:hover {
+    background: linear-gradient(90deg, #312e81 60%, #818cf8 100%);
+}
+
+.bg-white80 {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.dark-bg-gray90080 {
+    background: rgba(17, 24, 39, 0.8);
+}
