@@ -128,7 +128,6 @@ button:hover,
         padding: 16px 8px;
     }
     .project-list {
-        flex-direction: column;
         gap: 12px;
     }
 }
