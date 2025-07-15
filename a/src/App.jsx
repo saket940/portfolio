@@ -13,7 +13,7 @@ function Home() {
         className="w-32 h-32 rounded-full shadow-lg mb-4 object-cover border-4 border-indigo-400"
         style={{ background: '#e0e7ff' }}
       />
-        <h1>Hi, I'm [Your Name]</h1>
+        <h1>Hi, I'm Saket Raja dadarya</h1>
         <p>Fullstack Developer</p>
         <p>Welcome to my portfolio website!</p>
       </section>
@@ -81,9 +81,9 @@ function Contact() {
         <h2>Contact</h2>
         <p>Feel free to reach out for collaboration or just a friendly hello!</p>
         <ul>
-          <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-          <li>LinkedIn: <a href="#" target="_blank" rel="noopener noreferrer">Your LinkedIn</a></li>
-          <li>GitHub: <a href="#" target="_blank" rel="noopener noreferrer">Your GitHub</a></li>
+          <li>Email: <a href="mailto:asdadarya2222@gmail.com">asdadarya2222@gmail.com</a></li>
+          <li>LinkedIn: <a href="www.linkedin.com/in/saket-dadarya" target="_blank" rel="noopener noreferrer">saket-dadarya</a></li>
+          <li>GitHub: <a href="https://github.com/saket940" target="_blank" rel="noopener noreferrer">https://github.com/saket940</a></li>
         </ul>
       </section>
   );
