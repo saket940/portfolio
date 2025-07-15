@@ -28,7 +28,7 @@ mongoose.connect(process.env.MONGODB_URI, {}).then(() => {
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
     // Dummy authentication logic
-    if (username === 'a' && password === 'p') {
+    if (username === process.env.USERNAME && password === process.env.PASSWORD) {
         res.json({
             success: true,
             message: 'Login successful',
