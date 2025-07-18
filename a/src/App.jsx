@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import profileImg from './assets/profile.jpg'; // Replace with your actual photo filename
+import profileImg from './assets/IMG-20250718-WA0000 (3).jpg'; // Replace with your actual photo filename
 
 function Home() {
   return (
